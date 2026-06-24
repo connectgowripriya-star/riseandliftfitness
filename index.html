@@ -47,6 +47,18 @@
          font-weight:bold;
          margin:10px;
          }
+         .membership-btn{
+display:block;
+width:100%;
+text-align:center;
+padding:12px 20px;
+background:#144787;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+margin-top:15px;
+}
          .section{
          padding:45px 20px;
          max-width:1200px;
@@ -59,21 +71,35 @@
          font-size:34px;
          font-family:'Salsa', cursive;
          }
-         .cards{
-         display:grid;
-         grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-         gap:20px;
-         }
-         .card{
-         background:white;
-         padding:25px;
-         border-radius:12px;
-         box-shadow:0 4px 15px rgba(0,0,0,.1);
-         }
-         .card h3{
-         color:#144787;
-         margin-bottom:10px;
-         }
+        .cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,.1);
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+min-height:220px;
+}
+
+.card h3{
+color:#144787;
+margin-bottom:10px;
+}
+
+.card .btn{
+margin-top:auto;
+text-align:center;
+width:100%;
+}
          .gallery{
          display:grid;
          grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -286,83 +312,108 @@
 
 <div class="card">
 <h3>1 Month Plan</h3>
-<p><b>₹ 2,000</b></p>
+<p><strong>₹ 2,000</strong></p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20the%201%20Month%20Plan" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>3 Months Plan</h3>
-<p><b>₹ 5,000</b></p>
+<p><strong>₹ 5,000</strong></p>
 <p>₹500 Registration Fee Applicable</p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20the%203%20Months%20Plan" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>6 Months Plan</h3>
-<p><b>₹ 8,000</b></p>
+<p><strong>₹ 8,000</strong></p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20the%206%20Months%20Plan" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>1 Year Plan</h3>
-<p><b>₹ 15,000</b></p>
+<p><strong>₹ 15,000</strong></p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20the%201%20Year%20Plan" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>Student Plan (Up to 21 Years)</h3>
-<p><b>₹ 1,000</b></p>
+<p><strong>₹ 1,000</strong></p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20the%20Student%20Plan" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>Zumba</h3>
-<p><b>₹ 2,000 / Month</b></p>
+<p><strong>₹ 2,000 / Month</strong></p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20Zumba" class="membership-btn">
+Enquire Now
+</a>
+</div>
+
+<div class="card">
+<h3>Dietitian</h3>
+<p><strong>₹ 1,000 / Month</strong></p>
+<p>Nutrition Consultation</p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20Dietitian%20Consultation" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>Personal Training</h3>
-<p><b>₹ 8,000 / Month</b></p>
+<p><strong>₹ 8,000 / Month</strong></p>
 <p>Gym Membership Mandatory</p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20Personal%20Training" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>Family Plan - 3 Months</h3>
-<p><b>₹ 7,500</b></p>
+<p><strong>₹ 7,500</strong></p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20Family%20Plan%203%20Months" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>Family Plan - 6 Months</h3>
-<p><b>₹ 15,000</b></p>
+<p><strong>₹ 15,000</strong></p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20Family%20Plan%206%20Months" class="membership-btn">
+Enquire Now
+</a>
 </div>
 
 <div class="card">
 <h3>Family Plan - 1 Year</h3>
-<p><b>₹ 22,500</b></p>
-</div>
-
-</div>
-<div class="card">
-<h3>Dietitian</h3>
-
-<p style="
-font-size:32px;
-font-weight:bold;
-color:#144787;
-margin:15px 0;
-">
-₹ 1,000
-</p>
-
-<p>
-1 Month Nutrition Consultation
-</p>
-
-<br>
-
-<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20the%20Dietitian%20Plan"
-class="btn">
-
+<p><strong>₹ 22,500</strong></p>
+   <p>&nbsp;</p>
+<a href="https://wa.me/918903462626?text=Hi%20I%20am%20interested%20in%20Family%20Plan%201%20Year" class="membership-btn">
 Enquire Now
-
 </a>
+</div>
 
 </div>
+
 </section>
       <section class="section" style="background:white;">
 
