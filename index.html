@@ -179,7 +179,289 @@ iframe {
 	border: none;
 	border-radius: 10px;
 }
+		 /* ===============================
+   DECATHLON FLOATING OFFER
+==================================*/
+
+.offer-ribbon{
+
+position:fixed;
+
+left:20px;
+bottom:20px;
+
+z-index:9999;
+
+display:flex;
+align-items:center;
+gap:15px;
+
+background:#ffffff;
+
+padding:12px 18px;
+
+border-radius:16px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.20);
+
+border-left:6px solid #144787;
+
+max-width:390px;
+
+animation:offerPulse 2s infinite;
+
+}
+
+.offer-ribbon img{
+
+height:42px;
+
+width:auto;
+
+}
+
+.offer-content{
+
+display:flex;
+flex-direction:column;
+
+}
+
+.offer-title{
+
+font-size:15px;
+font-weight:bold;
+color:#144787;
+
+}
+
+.offer-desc{
+
+font-size:13px;
+line-height:1.4;
+color:#444;
+margin:4px 0 10px;
+
+}
+
+.offer-btn{
+
+display:inline-block;
+
+background:#144787;
+color:white;
+
+padding:8px 18px;
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.offer-btn:hover{
+
+background:#0DB5A5;
+transform:scale(1.05);
+
+}
+
+@keyframes offerPulse{
+
+0%{
+
+box-shadow:0 0 0 rgba(13,181,165,.4);
+
+}
+
+50%{
+
+box-shadow:0 0 18px rgba(13,181,165,.35);
+
+}
+
+100%{
+
+box-shadow:0 0 0 rgba(13,181,165,.4);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.offer-ribbon{
+
+left:10px;
+right:10px;
+
+bottom:85px;
+
+max-width:none;
+
+}
+
+.offer-ribbon img{
+
+height:34px;
+
+}
+
+.offer-title{
+
+font-size:14px;
+
+}
+
+.offer-desc{
+
+font-size:12px;
+
+}
+
+}
+		  .offer-star{
+
+font-size:24px;
+
+color:#FFD700;
+
+margin-right:8px;
+
+display:inline-block;
+
+animation:starGlow 1.5s infinite;
+
+}
+
+@keyframes starGlow{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+50%{
+transform:scale(1.3);
+opacity:.4;
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
+		  .offer-badge{
+
+display:inline-block;
+
+background:linear-gradient(135deg,#FF6B00,#FFD400);
+
+color:#fff;
+
+font-size:11px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+padding:4px 10px;
+
+border-radius:30px;
+
+margin-bottom:8px;
+
+animation:badgePulse 1.6s infinite;
+
+text-transform:uppercase;
+
+box-shadow:0 3px 10px rgba(255,107,0,.35);
+
+}
+
+@keyframes badgePulse{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+50%{
+transform:scale(1.08);
+opacity:.75;
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
+		  /* ===========================
+   Social Media Icons
+=========================== */
+
+.social-icons{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+margin-top:25px;
+
+flex-wrap:wrap;
+
+}
+
+.social-icons a{
+
+width:52px;
+height:52px;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+background:white;
+
+color:#144787;
+
+font-size:24px;
+
+text-decoration:none;
+
+transition:.3s;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.social-icons a:hover{
+
+transform:translateY(-5px) scale(1.08);
+
+background:#0DB5A5;
+
+color:white;
+
+}
 </style>
+	   <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    </head>
    <body>
       <header style="
@@ -206,7 +488,7 @@ iframe {
             padding-left:7%;
             color:white;
             ">
-            <img src="Logo.png"
+            <img src="Logo1.png"
                style="
                width:200px;
                margin-bottom:20px;
@@ -253,31 +535,124 @@ iframe {
             Call Now
             </a>
             <br><br>
-            <div style="
-               display:inline-block;
-               background:rgba(0,0,0,.55);
-               padding:12px 25px;
-               border-radius:30px;
-               border:1px solid #0DB5A5;
-               ">
-               🏆 Official Sports Partner: DECATHLON
-            </div>
+      <div style="
+display:inline-flex;
+align-items:center;
+gap:15px;
+padding:12px 22px;
+background:rgba(0,0,0,.55);
+border:2px solid #0DB5A5;
+border-radius:40px;
+">
+
+<span style="font-size:22px;">🏆</span>
+
+<span style="
+color:white;
+font-weight:600;
+font-size:18px;
+">
+Official Sports Partner
+</span>
+
+<img
+src="decathlon-logo.png"
+alt="Decathlon"
+style="
+height:34px;
+background:white;
+padding:5px 10px;
+border-radius:8px;
+">
+
+</div>
          </div>
       </header>
       <br/>
-      <section class="section" style="background:white;">
-         <h2>About Us</h2>
-         <p style="
-            max-width:1000px;
-            margin:auto;
-            text-align:center;
-            font-size:22px;
-            line-height:1.8;
-            color:#2F2F2F;
-            ">
-            Rise And Lift Fitness Studio empowers individuals to rise above their limitations and lift their overall wellbeing through expert-guided fitness programs, nutritional education, and a supportive community that fosters sustainable lifelong health.
-         </p>
-      </section>
+      <section class="section" style="background:#ffffff;">
+
+<h2>About Us</h2>
+
+<p style="
+text-align:center;
+max-width:1000px;
+margin:0 auto 50px;
+font-size:18px;
+line-height:1.9;
+color:#444;
+">
+Rise And Lift Fitness Studio empowers individuals to rise above their limitations and lift their overall wellbeing through expert-guided fitness programs, nutritional education, and a supportive community that fosters sustainable lifelong health.
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+">
+
+<!-- Mission -->
+
+<div style="
+background:#F5F9FF;
+padding:35px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+border-top:5px solid #0DB5A5;
+">
+
+<h3 style="
+color:#144787;
+margin-bottom:20px;
+font-size:28px;
+font-family:'Salsa',cursive;
+">
+🎯 Our Mission
+</h3>
+
+<p style="
+line-height:1.9;
+font-size:17px;
+color:#555;
+">
+Mission content goes here.
+  To become the most trusted and holistic wellness partner in the city, transforming lives by making premium fitness and mindful living accessible to all.
+        
+</p>
+
+</div>
+
+<!-- Vision -->
+
+<div style="
+background:#F5F9FF;
+padding:35px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+border-top:5px solid #144787;
+">
+
+<h3 style="
+color:#144787;
+margin-bottom:20px;
+font-size:28px;
+font-family:'Salsa',cursive;
+">
+👁️ Our Vision
+</h3>
+
+<p style="
+line-height:1.9;
+font-size:17px;
+color:#555;
+">
+  To become the most trusted and holistic wellness partner in the city, transforming lives by making premium fitness and mindful living accessible to all.
+</p>
+
+</div>
+
+</div>
+
+</section>
       <section class="section">
          <h2>Our Programs</h2>
          <div class="cards">
@@ -307,22 +682,7 @@ iframe {
             </div>
          </div>
       </section>
-      <section style="
-         background:linear-gradient(135deg,#144787,#0DB5A5);
-         color:white;
-         padding:40px 20px;
-         text-align:center;
-         ">
-         <h2>🎁 Exclusive Member Benefit</h2>
-         <p style="font-size:20px;">
-            Get <strong>5% OFF</strong> at Decathlon on purchases above
-            <strong>₹1500</strong> for Rise And Lift Fitness Studio members.
-         </p>
-         <p>
-            Show your active membership and enjoy exclusive savings on sports and fitness products.
-         </p>
-         <br/> <br/>
-      </section>
+     
      <section class="section">
 
 <h2>Membership Plans</h2>
@@ -449,7 +809,7 @@ To make our Member Of The Month selection fair and transparent, members are eval
 
 </p>
 
-<img src="member-month.jpeg"
+<img src="member-month1.jpeg"
 style="
 width:100%;
 max-width:900px;
@@ -548,51 +908,92 @@ box-shadow:0 5px 20px rgba(0,0,0,.2);
 </div>
 
 </section>
-      <section class="section">
+    <section class="section">
 
-<h2>⭐⭐⭐⭐⭐ What Our Members Say</h2>
+<h2>⭐⭐⭐⭐⭐ Trusted by Our Members</h2>
 
 <div class="cards">
 
 <div class="card">
-⭐⭐⭐⭐⭐
-<br><br>
-"Excellent trainers and great atmosphere.
-Highly recommended."
-<br><br>
-<b>- Rahul</b>
+
+<div style="color:#FFC107;font-size:20px;">★★★★★</div>
+
+<p style="margin-top:15px;line-height:1.7;">
+
+"The gym atmosphere is amazing, with a very positive and energetic vibe. The equipment is high-class and well maintained, making every workout comfortable and effective."
+
+</p>
+
+<br>
+
+<b>— Bhavan Raj</b>
+
+<small style="display:block;color:#777;margin-top:5px;">
+3 months ago • Google Review
+</small>
+
 </div>
 
 <div class="card">
-⭐⭐⭐⭐⭐
-<br><br>
-"Lost 8 kg in 4 months.
-Personal attention is amazing."
-<br><br>
-<b>- Priya</b>
+
+<div style="color:#FFC107;font-size:20px;">★★★★★</div>
+
+<p style="margin-top:15px;line-height:1.7;">
+
+"I've tried multiple gyms before, but this one truly stands out. Within just 2 months I noticed significant improvements in my strength."
+
+</p>
+
+<br>
+
+<b>— Lalitha Vishva</b>
+
+<small style="display:block;color:#777;margin-top:5px;">
+2 months ago • Google Review
+</small>
+
 </div>
 
 <div class="card">
-⭐⭐⭐⭐⭐
-<br><br>
-"Best fitness studio in Kovilpalayam."
-<br><br>
-<b>- Aravind</b>
-</div>
+
+<div style="color:#FFC107;font-size:20px;">★★★★★</div>
+
+<p style="margin-top:15px;line-height:1.7;">
+
+"My experience has been excellent. The atmosphere is great, the equipment is well maintained, and the gym is always clean and organized."
+
+</p>
+
+<br>
+
+<b>— Tharun</b>
+
+<small style="display:block;color:#777;margin-top:5px;">
+3 months ago • Google Review
+</small>
 
 </div>
 
-<br><br>
+</div>
 
-<a href="#"
-class="btn">
+<div style="text-align:center;margin-top:40px;">
 
-View More Reviews
+<a href="https://www.google.com/search?sca_esv=27b8a2e72666fe1f&rlz=1C1SLLM_enIN1195IN1195&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_wsWg7NT6oLxcUgfAUR6acYd9Q18pIoMaVO8VFvftmwhZzFe4khvGvt8kdPyBKEROOL9BA4LbCtjFt7vChWQ4s-00hbB&q=Rise+and+Lift+Reviews&sa=X&ved=2ahUKEwiz-KXp4KaVAxVgzjgGHUvuJ7YQ0bkNegQIJhAH&biw=1366&bih=599&dpr=1"
+target="_blank"
+class="btn"
+style="
+background:#144787;
+color:white;
+padding:14px 35px;
+">
+
+⭐⭐⭐⭐⭐ View All Google Reviews
 
 </a>
 
-</section>
-    <section style="
+</div>
+
+</section>    <section style="
 background:linear-gradient(135deg,#144787,#0DB5A5);
 padding:60px 20px;
 text-align:center;
@@ -670,33 +1071,11 @@ opacity:.95;
             <img src="8.jpg">
          </div>
       </section>
-      <section class="section" style="background:white;">
-         <h2>Our Vision</h2>
-         <p style="
-            max-width:1000px;
-            margin:auto;
-            text-align:center;
-            font-size:22px;
-            line-height:1.8;
-            color:#2F2F2F;
-            ">
-            To become the most trusted and holistic wellness partner in the city, transforming lives by making premium fitness and mindful living accessible to all.
-         </p>
-      </section>
-      <section class="section">
-         <h2>Sports Partner</h2>
-         <div class="partner">
-            🏆 OFFICIAL SPORTS PARTNER
-            <br><br>
-            DECATHLON
-            <br><br>
-            Get 5% OFF on purchases above ₹1500
-            for active Rise And Lift members.
-         </div>
-      </section>
+     
+     
       <section class="section" style="background:white;">
          <h2>Location</h2>
-         <iframe src="https://maps.google.com/maps?q=Kottaipalayam%20Coimbatore&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+         <iframe src="https://maps.app.goo.gl/t4HeQsAe6TCLWbu68"></iframe>
       </section>
       <section class="contact">
          <h2>Contact Us</h2>
@@ -710,33 +1089,119 @@ opacity:.95;
             Tamil Nadu - 641110
          </p>
          <br>
-         <p>
-            Instagram:
-            <a href="https://www.instagram.com/riseandlift2025" target="_blank">
-            @riseandlift2025
-            </a>
-         </p>
-         <br>
-         <p>
-            Facebook:
-            <a href="https://www.facebook.com/share/1D167ojzc1/" target="_blank">
-            Visit Page
-            </a>
-         </p>
+        <div class="social-icons">
+
+<a href="https://www.instagram.com/riseandlift2025"
+target="_blank"
+title="Instagram">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="https://www.facebook.com/share/1D167ojzc1/"
+target="_blank"
+title="Facebook">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+<a href="https://wa.me/918903462626"
+target="_blank"
+title="WhatsApp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a href="mailto:admin@riseandliftfitness.com"
+title="Email">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+<a href="#"
+title="LinkedIn">
+
+<i class="fab fa-linkedin-in"></i>
+
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.app.riseandlift"
+target="_blank"
+title="Android App">
+
+<i class="fab fa-google-play"></i>
+
+</a>
+
+<a href="#"
+title="Coming Soon on iPhone">
+
+<i class="fab fa-app-store-ios"></i>
+
+</a>
+
+</div>
+		  <p style="margin-top:18px;font-size:15px;color:white;opacity:.9;">
+
+Follow us on social media and download our mobile app for workouts, progress tracking and exclusive member benefits.
+
+</p>
       </section>
       <footer>
-         <img src="footer-logo.png"
-            style="
-            max-width:260px;
-            margin-bottom:15px;
-            ">
-         <br>
-         © 2025 Rise And Lift Fitness Studio
-         <br>
-         UNLEASH YOUR POTENTIAL • RISE. LIFT. CONQUER.
-      </footer>
+
+<img src="footer-logo.png"
+style="
+max-width:380px;
+width:100%;
+height:auto;
+margin-bottom:20px;
+">
+
+<br>
+
+© 2025 Rise And Lift Fitness Studio
+
+<br>
+
+UNLEASH YOUR POTENTIAL • RISE. LIFT. CONQUER.
+
+</footer>
       <a class="whatsapp" href="https://wa.me/918903462626" target="_blank">
       💬 Join Now
       </a>
+	   <div class="offer-ribbon">
+
+    <img src="decathlon-logo.png" alt="Decathlon">
+
+   <div class="offer-content">
+
+    <span class="offer-badge">
+        🔥 MEMBER BENEFIT
+    </span>
+
+    <div class="offer-title">
+        Official Sports Partner
+    </div>
+
+    <div class="offer-desc">
+        Get <strong>5% OFF</strong> on Decathlon purchases above
+        <strong>₹1,500</strong>.<br>
+        <small>Exclusive for active Rise And Lift Fitness Studio members.</small>
+    </div>
+
+    <a href="https://www.decathlon.in/"
+       target="_blank"
+       class="offer-btn">
+
+       🛒 Shop at Decathlon
+
+    </a>
+
+</div>
    </body>
+	
 </html>
