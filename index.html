@@ -6,6 +6,155 @@
       <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
       <title>Rise And Lift Fitness Studio</title>
       <style>
+		  html{
+
+scroll-behavior:smooth;
+
+}
+		  /*=========================
+ NAVBAR
+==========================*/
+
+.navbar{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+background:#001F4D;
+
+z-index:99999;
+
+box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+}
+
+.nav-container{
+
+max-width:1300px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:12px 30px;
+
+}
+
+.logo img{
+
+height:55px;
+
+}
+
+.nav-menu{
+
+display:flex;
+
+list-style:none;
+
+gap:30px;
+
+align-items:center;
+
+}
+
+.nav-menu a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+color:#0DB5A5;
+
+}
+
+.join-btn{
+
+background:#0DB5A5;
+
+padding:10px 22px;
+
+border-radius:30px;
+
+}
+
+.join-btn:hover{
+
+background:white;
+
+color:#144787!important;
+
+}
+
+.hamburger{
+
+display:none;
+
+font-size:34px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+/*=========================
+ MOBILE
+==========================*/
+
+@media(max-width:900px){
+
+.hamburger{
+
+display:block;
+
+}
+
+.nav-menu{
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:#001F4D;
+
+display:none;
+
+flex-direction:column;
+
+padding:25px 0;
+
+gap:20px;
+
+}
+
+.nav-menu.active{
+
+display:flex;
+
+}
+
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -124,13 +273,22 @@ header p {
 	border-radius: 10px;
 }
 
-.plan-image {
-	width: 100%;
-	max-width: 700px;
-	display: block;
-	margin: auto;
-	border-radius: 12px;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+.member-poster{
+
+width:100%;
+
+max-width:900px;
+
+height:auto;
+
+display:block;
+
+margin:40px auto;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+
 }
 
 .contact {
@@ -464,7 +622,58 @@ color:white;
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    </head>
    <body>
-      <header style="
+	   <nav class="navbar">
+
+<div class="nav-container">
+
+<a href="#home" class="logo">
+
+<img src="logo.png" alt="Rise And Lift">
+
+</a>
+
+<div class="hamburger" onclick="toggleMenu()">
+
+☰
+
+</div>
+
+<ul class="nav-menu" id="navMenu">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#programs">Programs</a></li>
+
+<li><a href="#membership">Membership</a></li>
+
+<li><a href="#transformation">Transformation</a></li>
+
+<li><a href="#reviews">Reviews</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+<li>
+
+<a href="https://wa.me/918903462626"
+
+class="join-btn"
+
+target="_blank">
+
+Join Now
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+      <header id="home" style="
          background:url('hero-clean.png') center center/cover no-repeat;
          height:850px;
          display:flex;
@@ -569,7 +778,7 @@ border-radius:8px;
          </div>
       </header>
       <br/>
-      <section class="section" style="background:#ffffff;">
+      <section id="about" class="section" style="background:#ffffff;">
 
 <h2>About Us</h2>
 
@@ -653,7 +862,7 @@ color:#555;
 </div>
 
 </section>
-      <section class="section">
+      <section id="programs" class="section">
          <h2>Our Programs</h2>
          <div class="cards">
             <div class="card">
@@ -683,7 +892,7 @@ color:#555;
          </div>
       </section>
      
-     <section class="section">
+     <section id="membership" class="section">
 
 <h2>Membership Plans</h2>
 
@@ -809,7 +1018,8 @@ To make our Member Of The Month selection fair and transparent, members are eval
 
 </p>
 
-<img src="member-month1.jpeg"
+<img src="member-month1.jpeg" class="member-poster"
+alt="Member of the Month Criteria"
 style="
 width:100%;
 max-width:900px;
@@ -863,7 +1073,7 @@ Consistency Creates Champions.
 
 </section>
 
-      <section class="section">
+      <section id="transformation" class="section">
 
 <h2>💪 Transformation Stories</h2>
 
@@ -908,7 +1118,7 @@ box-shadow:0 5px 20px rgba(0,0,0,.2);
 </div>
 
 </section>
-    <section class="section">
+    <section id="reviews" class="section">
 
 <h2>⭐⭐⭐⭐⭐ Trusted by Our Members</h2>
 
@@ -993,7 +1203,8 @@ padding:14px 35px;
 
 </div>
 
-</section>    <section style="
+</section>   
+	   <section style="
 background:linear-gradient(135deg,#144787,#0DB5A5);
 padding:60px 20px;
 text-align:center;
@@ -1058,7 +1269,7 @@ opacity:.95;
 </p>
 
 </section>
-      <section class="section">
+      <section id="gallery" class="section">
          <h2>Gym Gallery</h2>
          <div class="gallery">
             <img src="1.jpg">
@@ -1077,7 +1288,7 @@ opacity:.95;
          <h2>Location</h2>
          <iframe src="https://maps.app.goo.gl/t4HeQsAe6TCLWbu68"></iframe>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
          <h2>Contact Us</h2>
          <p><b>Phone:</b> 8903462626</p>
          <p><b>Email:</b> admin@riseandliftfitness.com</p>
@@ -1202,6 +1413,15 @@ UNLEASH YOUR POTENTIAL • RISE. LIFT. CONQUER.
     </a>
 
 </div>
+		   <script>
+
+function toggleMenu(){
+
+document.getElementById("navMenu").classList.toggle("active");
+
+}
+
+</script>
    </body>
 	
 </html>
