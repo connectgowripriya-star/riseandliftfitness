@@ -364,126 +364,130 @@ iframe {
 		 /* ===============================
    DECATHLON FLOATING OFFER
 ==================================*/
-
-.offer-ribbon{
+.offer-float{
 
 position:fixed;
 
-right:20px;
+left:20px;
 
-bottom:100px;
+bottom:20px;
 
-z-index:999;
-
-background:#ffffff;
-
-border-radius:24px;
-
-padding:16px;
-
-width:190px;
-
-text-align:center;
-
-box-shadow:0 10px 30px rgba(0,0,0,.18);
-
-border:2px solid #0DB5A5;
-
-animation:floatOffer 2.5s ease-in-out infinite;
-
-}
-
-.offer-badge{
-
-display:inline-block;
-
-background:#FF6B00;
-
-color:#fff;
-
-padding:5px 12px;
-
-border-radius:20px;
-
-font-size:11px;
-
-font-weight:700;
-
-letter-spacing:.8px;
-
-margin-bottom:10px;
-
-text-transform:uppercase;
-
-}
-
-.offer-title{
-
-font-size:30px;
-
-font-weight:800;
-
-color:#144787;
-
-line-height:1;
-
-margin-bottom:4px;
-
-}
-
-.offer-subtitle{
-
-font-size:15px;
-
-font-weight:600;
-
-color:#555;
-
-margin-bottom:14px;
-
-}
-
-.offer-btn{
-
-display:block;
-
-background:#0DB5A5;
-
-color:#fff;
+z-index:9999;
 
 text-decoration:none;
 
-padding:10px 0;
+}
 
-border-radius:30px;
+.offer-circle{
 
-font-weight:700;
+width:88px;
+
+height:88px;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,#144787,#0DB5A5);
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+color:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+border:3px solid white;
+
+animation:offerPulse 1s infinite;
 
 transition:.3s;
 
 }
 
-.offer-btn:hover{
+.offer-circle:hover{
 
-background:#144787;
+transform:scale(1.1);
 
 }
 
-@keyframes floatOffer{
+.offer-star{
 
-0%,100%{
+font-size:18px;
 
-transform:translateY(0);
+margin-bottom:2px;
+
+}
+
+.offer-percent{
+
+font-size:26px;
+
+font-weight:800;
+
+line-height:1;
+
+}
+
+.offer-text{
+
+font-size:12px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+}
+
+		  @keyframes offerPulse{
+
+0%{
+
+transform:scale(1);
 
 }
 
 50%{
 
-transform:translateY(-6px);
+transform:scale(1.08);
 
 }
 
-}		  /* ===========================
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+		  @media(max-width:768px){
+
+.offer-circle{
+
+width:78px;
+
+height:78px;
+
+}
+
+.offer-percent{
+
+font-size:22px;
+
+}
+
+.offer-text{
+
+font-size:11px;
+
+}
+
+}
+ /* ===========================
    Social Media Icons
 =========================== */
 
@@ -1341,33 +1345,28 @@ UNLEASH YOUR POTENTIAL • RISE. LIFT. CONQUER.
       <a class="whatsapp" href="https://wa.me/918903462626" target="_blank">
       💬 Join Now
       </a>
-	 <div class="offer-ribbon">
+	<a href="https://www.decathlon.in/"
+target="_blank"
+class="offer-float"
+title="5% OFF at Decathlon">
 
-    <div class="offer-content">
+<div class="offer-circle">
 
-        <span class="offer-badge">
-            MEMBER BENEFIT
-        </span>
+<div class="offer-star">
+🏷️
+</div>
 
-        <div class="offer-title">
-            <strong>5% OFF</strong>
-        </div>
+<div class="offer-percent">
+5%
+</div>
 
-        <div class="offer-subtitle">
-            at Decathlon
-        </div>
-
-        <a href="https://www.decathlon.in/"
-           target="_blank"
-           class="offer-btn">
-
-            🛒 Shop Now
-
-        </a>
-
-    </div>
+<div class="offer-text">
+OFF
+</div>
 
 </div>
+
+</a>
 		  <script>
 
 function toggleMenu() {
