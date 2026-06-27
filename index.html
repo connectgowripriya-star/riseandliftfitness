@@ -357,79 +357,95 @@ iframe {
 
 position:fixed;
 
-left:20px;
-bottom:20px;
+right:20px;
 
-z-index:9999;
+bottom:100px;
 
-display:flex;
-align-items:center;
-gap:15px;
+z-index:999;
 
 background:#ffffff;
 
-padding:12px 18px;
+border-radius:24px;
 
-border-radius:16px;
+padding:16px;
 
-box-shadow:0 8px 25px rgba(0,0,0,.20);
+width:190px;
 
-border-left:6px solid #144787;
+text-align:center;
 
-max-width:390px;
+box-shadow:0 10px 30px rgba(0,0,0,.18);
 
-animation:offerPulse 2s infinite;
+border:2px solid #0DB5A5;
 
-}
-
-.offer-ribbon img{
-
-height:42px;
-
-width:auto;
+animation:floatOffer 2.5s ease-in-out infinite;
 
 }
 
-.offer-content{
+.offer-badge{
 
-display:flex;
-flex-direction:column;
+display:inline-block;
+
+background:#FF6B00;
+
+color:#fff;
+
+padding:5px 12px;
+
+border-radius:20px;
+
+font-size:11px;
+
+font-weight:700;
+
+letter-spacing:.8px;
+
+margin-bottom:10px;
+
+text-transform:uppercase;
 
 }
 
 .offer-title{
 
-font-size:15px;
-font-weight:bold;
+font-size:30px;
+
+font-weight:800;
+
 color:#144787;
+
+line-height:1;
+
+margin-bottom:4px;
 
 }
 
-.offer-desc{
+.offer-subtitle{
 
-font-size:13px;
-line-height:1.4;
-color:#444;
-margin:4px 0 10px;
+font-size:15px;
+
+font-weight:600;
+
+color:#555;
+
+margin-bottom:14px;
 
 }
 
 .offer-btn{
 
-display:inline-block;
+display:block;
 
-background:#144787;
-color:white;
+background:#0DB5A5;
 
-padding:8px 18px;
+color:#fff;
+
+text-decoration:none;
+
+padding:10px 0;
 
 border-radius:30px;
 
-font-size:13px;
-
-font-weight:bold;
-
-text-decoration:none;
+font-weight:700;
 
 transition:.3s;
 
@@ -437,146 +453,25 @@ transition:.3s;
 
 .offer-btn:hover{
 
-background:#0DB5A5;
-transform:scale(1.05);
+background:#144787;
 
 }
 
-@keyframes offerPulse{
+@keyframes floatOffer{
 
-0%{
+0%,100%{
 
-box-shadow:0 0 0 rgba(13,181,165,.4);
+transform:translateY(0);
 
-}
-
-50%{
-
-box-shadow:0 0 18px rgba(13,181,165,.35);
-
-}
-
-100%{
-
-box-shadow:0 0 0 rgba(13,181,165,.4);
-
-}
-
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.offer-ribbon{
-
-left:10px;
-right:10px;
-
-bottom:85px;
-
-max-width:none;
-
-}
-
-.offer-ribbon img{
-
-height:34px;
-
-}
-
-.offer-title{
-
-font-size:14px;
-
-}
-
-.offer-desc{
-
-font-size:12px;
-
-}
-
-}
-		  .offer-star{
-
-font-size:24px;
-
-color:#FFD700;
-
-margin-right:8px;
-
-display:inline-block;
-
-animation:starGlow 1.5s infinite;
-
-}
-
-@keyframes starGlow{
-
-0%{
-transform:scale(1);
-opacity:1;
 }
 
 50%{
-transform:scale(1.3);
-opacity:.4;
-}
 
-100%{
-transform:scale(1);
-opacity:1;
-}
-
-}
-		  .offer-badge{
-
-display:inline-block;
-
-background:linear-gradient(135deg,#FF6B00,#FFD400);
-
-color:#fff;
-
-font-size:11px;
-
-font-weight:700;
-
-letter-spacing:1px;
-
-padding:4px 10px;
-
-border-radius:30px;
-
-margin-bottom:8px;
-
-animation:badgePulse 1.6s infinite;
-
-text-transform:uppercase;
-
-box-shadow:0 3px 10px rgba(255,107,0,.35);
+transform:translateY(-6px);
 
 }
 
-@keyframes badgePulse{
-
-0%{
-transform:scale(1);
-opacity:1;
-}
-
-50%{
-transform:scale(1.08);
-opacity:.75;
-}
-
-100%{
-transform:scale(1);
-opacity:1;
-}
-
-}
-		  /* ===========================
+}		  /* ===========================
    Social Media Icons
 =========================== */
 
@@ -1399,25 +1294,31 @@ UNLEASH YOUR POTENTIAL • RISE. LIFT. CONQUER.
       <a class="whatsapp" href="https://wa.me/918903462626" target="_blank">
       💬 Join Now
       </a>
-	   <div class="offer-ribbon">
+	 <div class="offer-ribbon">
 
-   <div class="offer-content">
+    <div class="offer-content">
 
-    <span class="offer-badge">
-        🔥 MEMBER BENEFIT
-    </span>
-    <div class="offer-desc">
-        Get <strong>5% OFF</strong> on Decathlon purchases above
-        <strong>₹1,500</strong>.<br>
+        <span class="offer-badge">
+            MEMBER BENEFIT
+        </span>
+
+        <div class="offer-title">
+            <strong>5% OFF</strong>
+        </div>
+
+        <div class="offer-subtitle">
+            at Decathlon
+        </div>
+
+        <a href="https://www.decathlon.in/"
+           target="_blank"
+           class="offer-btn">
+
+            🛒 Shop Now
+
+        </a>
+
     </div>
-
-    <a href="https://www.decathlon.in/"
-       target="_blank"
-       class="offer-btn">
-
-       🛒 Shop at Decathlon
-
-    </a>
 
 </div>
 		   <script>
