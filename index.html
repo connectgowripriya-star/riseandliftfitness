@@ -425,16 +425,17 @@ iframe {
 	border: none;
 	border-radius: 10px;
 }
-		 /* ===============================
-   DECATHLON FLOATING OFFER
-==================================*/
+	/*==============================
+FLOATING BUTTONS
+==============================*/
+
 .offer-float{
 
 position:fixed;
 
-left:20px;
+left:18px;
 
-bottom:20px;
+bottom:18px;
 
 z-index:9999;
 
@@ -442,19 +443,70 @@ text-decoration:none;
 
 }
 
-.offer-circle{
+.whatsapp-float{
 
-width:88px;
+position:fixed;
 
-height:88px;
+right:18px;
 
-border-radius:50%;
+bottom:18px;
 
-background:linear-gradient(135deg,#144787,#0DB5A5);
+z-index:9999;
+
+text-decoration:none;
+
+}
+
+/*==============================
+COMMON STYLE
+==============================*/
+
+.offer-box,
+.whatsapp-float{
 
 display:flex;
 
-flex-direction:column;
+align-items:center;
+
+gap:12px;
+
+height:64px;
+
+padding:0 20px;
+
+border-radius:40px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+transition:.35s;
+
+animation:pulse 1.2s infinite;
+
+}
+
+/*==============================
+OFFER
+==============================*/
+
+.offer-box{
+
+background:white;
+
+border:2px solid #0DB5A5;
+
+}
+
+.offer-icon{
+
+width:42px;
+
+height:42px;
+
+border-radius:50%;
+
+background:#144787;
+
+display:flex;
 
 align-items:center;
 
@@ -462,51 +514,100 @@ justify-content:center;
 
 color:white;
 
-box-shadow:0 10px 25px rgba(0,0,0,.35);
+font-size:18px;
 
-border:3px solid white;
-
-animation:offerPulse 1s infinite;
-
-transition:.3s;
+flex-shrink:0;
 
 }
 
-.offer-circle:hover{
-
-transform:scale(1.1);
-
-}
-
-.offer-star{
+.offer-title{
 
 font-size:18px;
 
-margin-bottom:2px;
-
-}
-
-.offer-percent{
-
-font-size:26px;
-
 font-weight:800;
+
+color:#144787;
 
 line-height:1;
 
 }
 
-.offer-text{
+.offer-sub{
 
-font-size:12px;
+font-size:14px;
 
 font-weight:700;
 
-letter-spacing:1px;
+color:#0DB5A5;
+
+line-height:1.2;
 
 }
 
-		  @keyframes offerPulse{
+.offer-member{
+
+font-size:12px;
+
+color:#666;
+
+}
+
+/*==============================
+WHATSAPP
+==============================*/
+
+.whatsapp-float{
+
+background:#25D366;
+
+color:white;
+
+font-size:18px;
+
+font-weight:700;
+
+}
+
+.whatsapp-float i{
+
+font-size:28px;
+
+}
+
+.whatsapp-float span{
+
+white-space:nowrap;
+
+}
+
+/*==============================
+HOVER
+==============================*/
+
+.offer-box:hover,
+.whatsapp-float:hover{
+
+transform:translateY(-3px) scale(1.03);
+
+}
+
+/*==============================
+SCROLL EFFECT
+==============================*/
+
+.floating-dim{
+
+opacity:.45;
+
+transform:scale(.92);
+
+}
+
+/*==============================
+ANIMATION
+==============================*/
+
+@keyframes pulse{
 
 0%{
 
@@ -516,7 +617,7 @@ transform:scale(1);
 
 50%{
 
-transform:scale(1.08);
+transform:scale(1.05);
 
 }
 
@@ -528,30 +629,63 @@ transform:scale(1);
 
 }
 
-		  @media(max-width:768px){
+/*==============================
+MOBILE
+==============================*/
 
-.offer-circle{
+@media(max-width:768px){
 
-width:78px;
+.offer-box,
+.whatsapp-float{
 
-height:78px;
+height:58px;
 
-}
-
-.offer-percent{
-
-font-size:22px;
-
-}
-
-.offer-text{
-
-font-size:11px;
+padding:0 15px;
 
 }
 
+.offer-title{
+
+font-size:16px;
+
 }
- /* ===========================
+
+.offer-sub{
+
+font-size:12px;
+
+}
+
+.offer-member{
+
+font-size:10px;
+
+}
+
+.offer-icon{
+
+width:36px;
+
+height:36px;
+
+font-size:16px;
+
+}
+
+.whatsapp-float{
+
+font-size:16px;
+
+}
+
+.whatsapp-float i{
+
+font-size:24px;
+
+}
+
+}
+		  /* ===========================
    Social Media Icons
 =========================== */
 
@@ -1404,30 +1538,54 @@ margin-bottom:20px;
 
 UNLEASH YOUR POTENTIAL • RISE. LIFT. CONQUER.
 
-</footer>
-      <a class="whatsapp" href="https://wa.me/918903462626" target="_blank">
-      💬 Join Now
-      </a>
-	<a href="https://www.decathlon.in/"
+</footer><!-- ===========================
+     FLOATING OFFER BUTTON
+============================ -->
+
+<a href="https://www.decathlon.in/"
 target="_blank"
 class="offer-float"
 title="5% OFF at Decathlon">
 
-<div class="offer-circle">
+<div class="offer-box">
 
-<div class="offer-star">
-    <i class="fas fa-gift"></i>
-</div>
-
-<div class="offer-percent">
-5%
+<div class="offer-icon">
+<i class="fas fa-percent"></i>
 </div>
 
 <div class="offer-text">
-OFF
+
+<div class="offer-title">
+5% OFF
+</div>
+
+<div class="offer-sub">
+at Decathlon
+</div>
+
+<div class="offer-member">
+For Gym Members
 </div>
 
 </div>
+
+</div>
+
+</a>
+
+
+
+<!-- ===========================
+     FLOATING WHATSAPP
+============================ -->
+
+<a href="https://wa.me/918903462626"
+class="whatsapp-float"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+<span>Join Now</span>
 
 </a>
 		  <script>
@@ -1458,6 +1616,27 @@ document.querySelectorAll("#navMenu a").forEach(function(item){
     });
 
 });
+
+let scrollTimer;
+
+window.addEventListener("scroll",function(){
+
+document.querySelector(".offer-box").classList.add("floating-dim");
+
+document.querySelector(".whatsapp-float").classList.add("floating-dim");
+
+clearTimeout(scrollTimer);
+
+scrollTimer=setTimeout(function(){
+
+document.querySelector(".offer-box").classList.remove("floating-dim");
+
+document.querySelector(".whatsapp-float").classList.remove("floating-dim");
+
+},250);
+
+});
+
 
 </script>
    </body>
