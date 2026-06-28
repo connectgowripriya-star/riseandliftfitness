@@ -919,24 +919,117 @@ font-size:24px;
 
 }
 
-		  /*=========================
-Transformation Gallery
-=========================*/
+/*=====================================
+Transformation Stories
+======================================*/
+
+.transformation-desc{
+
+max-width:850px;
+
+margin:0 auto 40px;
+
+text-align:center;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+
+/*-------------------
+Videos
+--------------------*/
+
+.transformation-video-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+gap:35px;
+
+margin-bottom:45px;
+
+}
+
+.video-card{
+
+background:#fff;
+
+border-radius:18px;
+
+padding:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+transition:.35s;
+
+text-align:center;
+
+}
+
+.video-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.20);
+
+}
+
+.video-title{
+
+display:inline-block;
+
+background:#144787;
+
+color:white;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+font-size:18px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.video-card video{
+
+width:100%;
+
+max-width:320px;
+
+border-radius:16px;
+
+background:#000;
+
+box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+}
+
+
+/*-------------------
+Images
+--------------------*/
 
 .transformation-gallery{
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-gap:20px;
-
-align-items:start;
+gap:25px;
 
 }
 
-.transformation-gallery img,
-.transformation-gallery video{
+.transformation-gallery img{
 
 width:100%;
 
@@ -950,26 +1043,28 @@ box-shadow:0 8px 20px rgba(0,0,0,.15);
 
 transition:.35s;
 
-background:#000;
-
 }
 
-.transformation-gallery img:hover,
-.transformation-gallery video:hover{
+.transformation-gallery img:hover{
 
 transform:translateY(-6px);
 
-box-shadow:0 15px 30px rgba(0,0,0,.22);
+box-shadow:0 15px 30px rgba(0,0,0,.20);
 
 }
 
+
+/*-------------------
+Bottom Text
+--------------------*/
+
 .transformation-text{
+
+margin-top:35px;
 
 text-align:center;
 
-margin-top:30px;
-
-font-size:20px;
+font-size:22px;
 
 font-weight:600;
 
@@ -979,20 +1074,73 @@ color:#144787;
 
 		  @media(max-width:768px){
 
+.transformation-video-grid{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+.video-card{
+
+padding:18px;
+
+}
+
+.video-title{
+
+font-size:16px;
+
+padding:8px 18px;
+
+}
+
+.video-card video{
+
+max-width:270px;
+
+}
+
 .transformation-gallery{
 
 grid-template-columns:1fr;
 
 }
 
-.transformation-gallery img,
-.transformation-gallery video{
+.transformation-gallery img{
 
 height:auto;
 
-max-height:500px;
+}
+
+.transformation-text{
+
+font-size:18px;
 
 }
+
+}
+
+		  .video-badge{
+
+display:inline-block;
+
+background:#0DB5A5;
+
+color:white;
+
+font-size:11px;
+
+font-weight:700;
+
+padding:4px 10px;
+
+border-radius:20px;
+
+margin-right:10px;
+
+letter-spacing:.5px;
 
 }
 	  </style>
@@ -1576,79 +1724,79 @@ Consistency Creates Champions.
 
 </div>
 
-</section>
-
-     <section id="transformation" class="section">
+</section><section id="transformation" class="section">
 
 <h2>💪 Transformation Stories</h2>
 
-<p style="
-text-align:center;
-max-width:800px;
-margin:0 auto 35px;
-font-size:18px;
-line-height:1.7;
-color:#555;
-">
+<p class="transformation-desc">
 
-Every transformation begins with a single step. Here are some inspiring journeys of our members who stayed consistent and achieved remarkable results.
+Every transformation starts with a decision to improve. Explore inspiring success stories and witness the remarkable results our members have achieved through dedication, consistency, and expert coaching.
 
 </p>
 
+
+<!-- Videos -->
+
+<div class="transformation-video-grid">
+
+    <!-- Video 1 -->
+
+    <div class="video-card">
+
+        <div class="video-title">
+<span class="video-badge">FEATURED</span>
+🎬 Member Success Story
+</div>
+
+        <video controls preload="metadata">
+
+            <source src="Testimonial.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+
+    <!-- Video 2 -->
+
+    <div class="video-card">
+
+        <div class="video-title">
+<span class="video-badge">NEW</span>
+🔥 Transformation Reel
+</div>
+
+        <video controls preload="metadata">
+
+            <source src="REEL11.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+</div>
+
+
+<!-- Images -->
+
 <div class="gallery transformation-gallery">
 
-    <!-- Images -->
+    <img src="transformation_1.jpeg" alt="Transformation Story 1">
 
-    <img src="transformation_1.jpeg" alt="Transformation 1">
+    <img src="transformation_2.png" alt="Transformation Story 2">
 
-    <img src="transformation_2.png" alt="Transformation 2">
-
-    <img src="transformation_3.png" alt="Transformation 3">
-
-    <!-- Reel -->
-
-    <video controls
-           preload="metadata"
-           poster="transformation_3.png">
-
-        <source src="REEL11.mp4" type="video/mp4">
-
-    </video>
+    <img src="transformation_3.png" alt="Transformation Story 3">
 
 </div>
 
 <p class="transformation-text">
-Real Members. Real Results. Real Inspiration.
+
+💙 Real Members. Real Results. Real Inspiration.
+
 </p>
 
 </section>
-
- <section class="section" style="background:white;">
-
-<h2>🎥 Success Story</h2>
-
-<div style="
-max-width:550px;
-margin:0 auto;
-">
-
-<video controls
-style="
-width:100%;
-height:auto;
-display:block;
-border-radius:18px;
-box-shadow:0 8px 20px rgba(0,0,0,.15);
-">
-
-<source src="Testimonial.mp4" type="video/mp4">
-
-</video>
-
-</div>
-
-</section>
-    <section id="reviews" class="section">
+     <section id="reviews" class="section">
 
 <h2>⭐⭐⭐⭐⭐ Trusted by Our Members</h2>
 
