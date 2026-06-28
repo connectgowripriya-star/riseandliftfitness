@@ -779,7 +779,223 @@ color:#144787;
 margin:12px 0;
 
 }
-</style>
+/*=========================
+COACH SECTION
+=========================*/
+
+.coach-section-title{
+
+font-size:30px;
+
+font-weight:700;
+
+color:#144787;
+
+margin-bottom:30px;
+
+text-align:center;
+
+}
+
+.coach-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+margin-bottom:10px;
+
+}
+
+.coach-card{
+
+background:#fff;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+transition:.35s;
+
+}
+
+.coach-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.coach-card img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+.coach-content{
+
+padding:22px;
+
+}
+
+.coach-content h3{
+
+color:#144787;
+
+font-size:24px;
+
+margin-bottom:8px;
+
+}
+
+.coach-exp{
+
+font-weight:700;
+
+color:#0DB5A5;
+
+margin-bottom:8px;
+
+}
+
+.coach-content p{
+
+margin-bottom:15px;
+
+color:#555;
+
+}
+
+.coach-content ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+.coach-content li{
+
+padding:6px 0;
+
+color:#444;
+
+line-height:1.5;
+
+}
+
+		  @media(max-width:768px){
+
+.coach-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.coach-card img{
+
+height:260px;
+
+}
+
+.coach-section-title{
+
+font-size:24px;
+
+}
+
+}
+
+		  /*=========================
+Transformation Gallery
+=========================*/
+
+.transformation-gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:20px;
+
+align-items:start;
+
+}
+
+.transformation-gallery img,
+.transformation-gallery video{
+
+width:100%;
+
+height:430px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+transition:.35s;
+
+background:#000;
+
+}
+
+.transformation-gallery img:hover,
+.transformation-gallery video:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.22);
+
+}
+
+.transformation-text{
+
+text-align:center;
+
+margin-top:30px;
+
+font-size:20px;
+
+font-weight:600;
+
+color:#144787;
+
+}
+
+		  @media(max-width:768px){
+
+.transformation-gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.transformation-gallery img,
+.transformation-gallery video{
+
+height:auto;
+
+max-height:500px;
+
+}
+
+}
+	  </style>
 	   <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    </head>
@@ -1034,7 +1250,161 @@ living accessible to all.
             </div>
          </div>
       </section>
-     
+	 <section class="section" id="coaches">
+
+<h2>🏋️ Meet Our Expert Coaches</h2>
+
+<p style="
+text-align:center;
+max-width:800px;
+margin:0 auto 45px;
+font-size:18px;
+line-height:1.7;
+color:#555;
+">
+
+Our experienced coaching team is dedicated to helping you achieve your fitness goals with expert guidance, personalized training, and continuous motivation.
+
+</p>
+
+
+<!-- PERSONAL TRAINERS -->
+
+<h3 class="coach-section-title">
+⭐ Personal Trainers
+</h3>
+
+<div class="coach-grid">
+
+<div class="coach-card">
+
+<img src="trainer1.jpg" alt="Personal Trainer">
+
+<div class="coach-content">
+
+<h3>Coach Name</h3>
+
+<p class="coach-exp">Certified Personal Trainer</p>
+
+<p>Experience : 6+ Years</p>
+
+<ul>
+
+<li>✔ Weight Loss</li>
+
+<li>✔ Muscle Building</li>
+
+<li>✔ Strength Training</li>
+
+<li>✔ Nutrition Guidance</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="coach-card">
+
+<img src="trainer2.jpg" alt="Personal Trainer">
+
+<div class="coach-content">
+
+<h3>Coach Name</h3>
+
+<p class="coach-exp">Certified Personal Trainer</p>
+
+<p>Experience : 5+ Years</p>
+
+<ul>
+
+<li>✔ Fat Loss</li>
+
+<li>✔ Functional Training</li>
+
+<li>✔ Strength & Conditioning</li>
+
+<li>✔ Lifestyle Coaching</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- GENERAL TRAINERS -->
+
+<h3 class="coach-section-title" style="margin-top:55px;">
+👥 General Trainers
+</h3>
+
+<div class="coach-grid">
+
+<div class="coach-card">
+
+<img src="trainer3.jpg" alt="General Trainer">
+
+<div class="coach-content">
+
+<h3>Coach Name</h3>
+
+<p class="coach-exp">General Fitness Trainer</p>
+
+<p>Experience : 4+ Years</p>
+
+<ul>
+
+<li>✔ Beginner Guidance</li>
+
+<li>✔ Gym Floor Assistance</li>
+
+<li>✔ Cardio Training</li>
+
+<li>✔ Daily Workout Support</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="coach-card">
+
+<img src="trainer4.jpg" alt="General Trainer">
+
+<div class="coach-content">
+
+<h3>Coach Name</h3>
+
+<p class="coach-exp">General Fitness Trainer</p>
+
+<p>Experience : 3+ Years</p>
+
+<ul>
+
+<li>✔ Fitness Assessment</li>
+
+<li>✔ Machine Guidance</li>
+
+<li>✔ Stretching & Warm-up</li>
+
+<li>✔ Member Support</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>     
      <section id="membership" class="section">
 
 <h2>Membership Plans</h2>
@@ -1208,42 +1578,67 @@ Consistency Creates Champions.
 
 </section>
 
-      <section id="transformation" class="section">
+     <section id="transformation" class="section">
 
 <h2>💪 Transformation Stories</h2>
 
-<div class="gallery">
+<p style="
+text-align:center;
+max-width:800px;
+margin:0 auto 35px;
+font-size:18px;
+line-height:1.7;
+color:#555;
+">
 
-<img src="transformation_1.jpeg">
-<img src="transformation_2.png">
-<img src="transformation_3.png">
+Every transformation begins with a single step. Here are some inspiring journeys of our members who stayed consistent and achieved remarkable results.
+
+</p>
+
+<div class="gallery transformation-gallery">
+
+    <!-- Images -->
+
+    <img src="transformation_1.jpeg" alt="Transformation 1">
+
+    <img src="transformation_2.png" alt="Transformation 2">
+
+    <img src="transformation_3.png" alt="Transformation 3">
+
+    <!-- Reel -->
+
+    <video controls
+           preload="metadata"
+           poster="transformation_3.png">
+
+        <source src="REEL11.mp4" type="video/mp4">
+
+    </video>
 
 </div>
 
-<p style="
-text-align:center;
-margin-top:20px;
-font-size:18px;
-">
-Real members. Real results.
+<p class="transformation-text">
+Real Members. Real Results. Real Inspiration.
 </p>
 
 </section>
 
-   <section class="section" style="background:white;">
+ <section class="section" style="background:white;">
 
 <h2>🎥 Success Story</h2>
 
 <div style="
-max-width:800px;
-margin:auto;
+max-width:550px;
+margin:0 auto;
 ">
 
 <video controls
 style="
 width:100%;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.2);
+height:auto;
+display:block;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
 ">
 
 <source src="Testimonial.mp4" type="video/mp4">
@@ -1407,12 +1802,12 @@ opacity:.95;
       <section id="gallery" class="section">
          <h2>Gym Gallery</h2>
          <div class="gallery">
-            <img src="1.jpg">
+            <img src="9.jpeg">
             <img src="2.jpg">
             <img src="3.jpg">
             <img src="4.jpg">
             <img src="5.jpg">
-            <img src="6.jpg">
+            <img src="10.jpeg">
             <img src="7.jpg">
             <img src="8.jpg">
          </div>
