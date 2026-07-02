@@ -1123,6 +1123,295 @@ padding-bottom:140px;
 }
 
 }
+		  .story-card{
+
+display:grid;
+
+grid-template-columns:320px 1fr;
+
+gap:40px;
+
+align-items:center;
+
+background:#fff;
+
+padding:30px;
+
+margin:40px 0;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.story-image img{
+
+width:100%;
+
+border-radius:16px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.18);
+
+}
+
+.story-content h3{
+
+color:#144787;
+
+font-size:30px;
+
+margin-bottom:20px;
+
+}
+
+.story-content p{
+
+font-size:18px;
+
+line-height:1.9;
+
+margin-bottom:18px;
+
+color:#444;
+
+text-align:justify;
+
+}
+
+.story-stats{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.story-stats span{
+
+background:#F5F9FF;
+
+padding:10px 18px;
+
+border-radius:30px;
+
+font-weight:600;
+
+color:#144787;
+
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+		  @media(max-width:768px){
+
+.story-card{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+gap:25px;
+
+}
+
+.story-content h3{
+
+font-size:24px;
+
+text-align:center;
+
+}
+
+.story-content p{
+
+font-size:16px;
+
+text-align:left;
+
+}
+
+.story-stats{
+
+justify-content:center;
+
+}
+
+}
+	 /*=========================
+Member Of The Month
+==========================*/
+
+.member-award-section{
+
+background:#fff;
+
+}
+
+.member-award-desc{
+
+max-width:900px;
+
+margin:0 auto 40px;
+
+text-align:center;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+.member-award-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:35px;
+
+margin-bottom:40px;
+
+}
+
+.award-card{
+
+background:#fff;
+
+padding:20px;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.award-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}
+
+.award-card h3{
+
+color:#144787;
+
+font-size:28px;
+
+margin-bottom:20px;
+
+font-weight:700;
+
+}
+
+.member-poster{
+
+width:100%;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.award-details{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:1.9;
+
+}
+
+.award-details p{
+
+margin-bottom:12px;
+
+}
+
+.award-note{
+
+margin-top:25px;
+
+font-weight:700;
+
+color:#144787;
+
+font-size:19px;
+
+}
+
+.award-footer{
+
+margin-top:30px;
+
+text-align:center;
+
+font-size:24px;
+
+font-weight:700;
+
+color:#0DB5A5;
+
+line-height:1.6;
+
+}
+		  @media(max-width:768px){
+
+.member-award-grid{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+.award-card{
+
+padding:15px;
+
+}
+
+.award-card h3{
+
+font-size:22px;
+
+}
+
+.member-award-desc{
+
+font-size:16px;
+
+}
+
+.award-details{
+
+font-size:16px;
+
+}
+
+.award-footer{
+
+font-size:20px;
+
+}
+
+}
+	  
 	  </style>
 	   <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -1632,6 +1921,21 @@ Our experienced coaching team is dedicated to helping you achieve your fitness g
 </div>
 
 <div class="card">
+    <h3>Western Dance</h3>
+    <p class="plan-price">₹ 1,500 / Month</p>
+    <p>Learn energetic dance routines, improve flexibility, coordination, and confidence.</p>
+    <p><small>2 Classes per Week</small></p>
+    <a href="https://wa.me/918903462626" class="btn">Enquire Now</a>
+</div>
+
+<div class="card">
+    <h3>Karate Training</h3>
+    <p class="plan-price">₹ 1,500 / Month</p>
+    <p>Build self-defense skills, discipline, strength, and confidence with expert coaching.</p>
+    <p><small>2 Classes per Week</small></p>
+    <a href="https://wa.me/918903462626" class="btn">Enquire Now</a>
+</div>
+<div class="card">
 <h3>Dietitian Consultation</h3>
 <p class="plan-price">₹ 1,000 / Month</p>
 <p>Customized nutrition and meal guidance.</p>
@@ -1641,70 +1945,76 @@ Our experienced coaching team is dedicated to helping you achieve your fitness g
 </div>
 
 </section>
-      <section class="section" style="background:white;">
+     <section class="section member-award-section">
 
 <h2>🏆 Member Of The Month Award</h2>
 
-<p style="
-max-width:900px;
-margin:0 auto 30px auto;
-font-size:18px;
-line-height:1.8;
-text-align:center;
-">
+<p class="member-award-desc">
 
-At Rise And Lift Fitness Studio, we believe that consistency deserves recognition.
-
-To make our Member Of The Month selection fair and transparent, members are evaluated based on attendance, workout commitment, fitness progress, discipline, and overall gym etiquette.
+At Rise And Lift Fitness Studio, we believe consistency deserves recognition.
+Every month, one outstanding member is selected based on attendance, workout commitment, fitness progress, discipline, and overall gym etiquette.
 
 </p>
 
-<img src="member-month1.jpeg" class="member-poster"
-alt="Member of the Month Criteria">
+<div class="member-award-grid">
 
-<br>
+    <!-- Rules Poster -->
 
-<div style="
-max-width:900px;
-margin:auto;
-font-size:18px;
-line-height:1.9;
-">
+    <div class="award-card">
 
-<p>✅ Attendance Consistency – 30%</p>
-<p>✅ Workout Commitment & Effort – 25%</p>
-<p>✅ Progress Towards Fitness Goals – 20%</p>
-<p>✅ Positive Attitude & Discipline – 15%</p>
-<p>✅ Supportiveness & Gym Etiquette – 10%</p>
+        <h3>📋 Selection Criteria</h3>
 
-<br>
+        <img src="member-month1.jpeg"
+             class="member-poster"
+             alt="Member of the Month Rules">
 
-<p style="
-font-weight:bold;
-color:#144787;
-">
+    </div>
+
+    <!-- Current Winner -->
+
+    <div class="award-card">
+
+        <h3>🌟 June 2026 Winner</h3>
+
+        <img src="member.jpeg"
+             class="member-poster"
+             alt="Current Member of the Month">
+
+    </div>
+
+</div>
+
+<div class="award-details">
+
+<p>✅ Attendance Consistency – <strong>30%</strong></p>
+
+<p>✅ Workout Commitment & Effort – <strong>25%</strong></p>
+
+<p>✅ Progress Towards Fitness Goals – <strong>20%</strong></p>
+
+<p>✅ Positive Attitude & Discipline – <strong>15%</strong></p>
+
+<p>✅ Supportiveness & Gym Etiquette – <strong>10%</strong></p>
+
+<p class="award-note">
 
 🏅 This award is not based solely on physical transformation.
-Dedication, discipline, effort and positive attitude are equally important.
+Dedication, discipline, consistency, effort, and a positive attitude are equally important.
 
 </p>
 
-<p style="
-font-size:22px;
-font-weight:bold;
-text-align:center;
-color:#0DB5A5;
-margin-top:25px;
-">
+<p class="award-footer">
 
-Progress Over Perfection.
+Progress Over Perfection.<br>
+
 Consistency Creates Champions.
 
 </p>
 
 </div>
 
-</section><section id="transformation" class="section">
+</section>
+	   <section id="transformation" class="section">
 
 <h2>💪 Transformation Stories</h2>
 
@@ -1756,20 +2066,148 @@ Every transformation starts with a decision to improve. Explore inspiring succes
 
 </div>
 
+<!-- Story 1 -->
 
-<!-- Images -->
+<div class="story-card">
 
-<div class="gallery">
+<div class="story-image">
 
-    <img src="transformation_1.jpeg">
-
-    <img src="transformation_2.png">
-
-    <img src="transformation_3.png">
+<img src="transformation_2.png">
 
 </div>
 
-<p class="transformation-text">
+<div class="story-content">
+
+<h3>🏆 Mr. Amudhan's Transformation Story</h3>
+
+<p>
+
+"I always wanted to lose weight, but I struggled to stay consistent on my own. Joining Rise & Lift Fitness Studio changed that. When I started, I weighed <strong>89 kg</strong>. With the encouragement of my trainer, <strong>Vinodhini</strong>, every workout became a step toward a healthier version of myself."
+
+</p>
+
+<p>
+
+"Today, I'm proud to have reached <strong>78.2 kg</strong>. My journey wasn't about shortcuts—it was about consistency, discipline, and building healthier habits that will last a lifetime."
+
+</p>
+
+<div class="story-stats">
+
+<span>⚖️ Before: <strong>89 kg</strong></span>
+
+<span>🏅 After: <strong>78.2 kg</strong></span>
+
+<span>👩‍🏫 Trainer: <strong>Vinodhini</strong></span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Story 2 -->
+
+<div class="story-card">
+
+<div class="story-image">
+
+<img src="transformation_1.jpeg">
+
+</div>
+
+<div class="story-content">
+
+<h3>🏆 Mr. Aravindan's Transformation Story</h3>
+
+<p>
+
+"My journey at Rise & Lift Fitness Studio started when I weighed <strong>133 kg</strong>. I knew I had to make a change, but I also knew I couldn't do it alone."
+
+</p>
+
+<p>
+
+"With the expert guidance of my trainer <strong>Clinton</strong>, I stayed committed to every workout and trusted the process. Today I'm proud to have reduced my weight to <strong>122 kg</strong>, gaining confidence, better health, and a completely new lifestyle."
+
+</p>
+
+<div class="story-stats">
+
+<span>⚖️ Before: <strong>133 kg</strong></span>
+
+<span>🏅 After: <strong>122 kg</strong></span>
+
+<span>👨‍🏫 Trainer: <strong>Clinton</strong></span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Story 3 -->
+
+<!-- Story 3 -->
+
+<div class="story-card">
+
+    <div class="story-image">
+
+        <img src="transformation_3.png" alt="Mr. Parthasarathy Transformation">
+
+    </div>
+
+    <div class="story-content">
+
+        <h3>🏆 Mr. Parthasarathy's Transformation Story</h3>
+
+        <p>
+
+            Hi, my name is <strong>Parthasarathy</strong>. Six months ago, I weighed <strong>102 kg</strong>. I knew it was time to make a positive change in my lifestyle and improve my overall health, so I joined <strong>Rise And Lift Fitness Studio</strong>.
+
+        </p>
+
+        <p>
+
+            The journey wasn't easy. I faced many challenges while dealing with excess weight and health-related issues. There were moments when I wanted to give up, but the trainers at Rise And Lift continuously motivated, guided, and encouraged me to stay focused on my goal.
+
+        </p>
+
+        <p>
+
+            With expert coaching, a structured workout plan, and consistent effort, I achieved something I never imagined possible—I successfully lost <strong>32 kg in just 6 months</strong>.
+
+        </p>
+
+        <p>
+
+            Today, I feel healthier, stronger, more energetic, and more confident than ever before. My message to anyone starting their fitness journey is simple: <strong>Believe in yourself, stay consistent, and trust the process. The results will follow.</strong>
+
+        </p>
+
+        <p>
+
+            Thank you, <strong>Rise And Lift Fitness Studio</strong>, for helping me transform my life.
+
+        </p>
+
+        <div class="story-stats">
+
+            <span>⚖️ Before: <strong>102 kg</strong></span>
+
+            <span>🏅 Weight Lost: <strong>32 kg</strong></span>
+
+            <span>🎯 Duration: <strong>6 Months</strong></span>
+
+        </div>
+
+    </div>
+
+</div>
+	<p class="transformation-text">
 
 💙 Real Members. Real Results. Real Inspiration.
 
