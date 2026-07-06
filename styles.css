@@ -1191,22 +1191,20 @@ Bottom Text
 		padding-bottom: 140px;
 	}
 .desktop-title{
-    display:none;
+    display:none !important;
 }
 
 .mobile-title{
-    display:block;
-    font-size:48px;
+    display:block !important;
+    font-size:46px;
     line-height:1.1;
 }
 .logo-a{
-
-height:.8em;
-
-margin:0 -3px;
-
-vertical-align:middle;
-
+    height:34px !important;
+    width:auto !important;
+    margin:0 -2px !important;
+    vertical-align:middle;
+	display:none !important;
 }
 }
 
@@ -1519,7 +1517,6 @@ Member Of The Month
 .desktop-title{
     display:flex;
     align-items:center;
-    gap:0;
 }
 
 .mobile-title{
