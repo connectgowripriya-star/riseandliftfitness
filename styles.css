@@ -1190,12 +1190,14 @@ Bottom Text
 	footer {
 		padding-bottom: 140px;
 	}
-.logo-a {
+.desktop-title{
     display:none;
 }
 
-.mobile-a{
-    display:inline;
+.mobile-title{
+    display:block;
+    font-size:48px;
+    line-height:1.1;
 }
 
 }
@@ -1491,11 +1493,27 @@ Member Of The Month
 	}
 
 }
+.hero-title {
+    display:flex;
+    align-items:center;
+    gap:0;
+    flex-wrap:wrap;
+}
 
 .logo-a {
-	height: 57px;
+   height: 57px;
 	width: 69px;
 	vertical-align: middle;
 	margin-left: 10px;
 	margin-right: -10px;
+}
+
+.desktop-title{
+    display:flex;
+    align-items:center;
+    gap:0;
+}
+
+.mobile-title{
+    display:none;
 }
