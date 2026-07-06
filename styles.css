@@ -1199,7 +1199,15 @@ Bottom Text
     font-size:48px;
     line-height:1.1;
 }
+.logo-a{
 
+height:.8em;
+
+margin:0 -3px;
+
+vertical-align:middle;
+
+}
 }
 
 .story-card {
