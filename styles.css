@@ -1188,10 +1188,15 @@ Bottom Text
 @media (max-width:768px) {
 
 	footer {
-
 		padding-bottom: 140px;
-
 	}
+.logo-a {
+    display:none;
+}
+
+.mobile-a{
+    display:inline;
+}
 
 }
 
