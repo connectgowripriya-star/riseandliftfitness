@@ -365,21 +365,29 @@ margin-top:40px;
 	border-radius: 10px;
 }
 
+.poster-frame{
+
+width:100%;
+
+height:720px;          /* choose a height that suits both */
+
+overflow:hidden;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
 .member-poster{
 
 width:100%;
 
-max-width:850px;
+height:100%;
 
-height:auto;
+object-fit:cover;
 
 display:block;
-
-margin:40px auto;
-
-border-radius:18px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.18);
 
 }
 
@@ -2080,11 +2088,9 @@ Every month, one outstanding member is selected based on attendance, workout com
     <div class="award-card">
 
         <h3>📋 Selection Criteria</h3>
-
-        <img src="member-month1.jpeg"
-             class="member-poster"
-             alt="Member of the Month Rules">
-
+<div class="poster-frame">
+    <img src="member-month1.jpeg" class="member-poster" alt="Member of the Month Rules">
+</div>
     </div>
 
     <!-- Current Winner -->
@@ -2092,12 +2098,10 @@ Every month, one outstanding member is selected based on attendance, workout com
     <div class="award-card">
 
         <h3>🌟 June 2026 Winner</h3>
-
-        <img src="member.jpeg"
-             class="member-poster"
-             alt="Current Member of the Month">
-
-    </div>
+<div class="poster-frame">
+    <img src="member.jpeg" class="member-poster" alt="Current Member of the Month">
+</div>
+      </div>
 
 </div>
 
