@@ -313,10 +313,16 @@ font-family:'Salsa',cursive;
 color:#144787;
 margin-bottom:25px;
 }
-.cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 20px;
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:40px;
+
 }
 
 .card {
@@ -327,9 +333,9 @@ margin-bottom:25px;
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content:flex-start;
 
-	min-height: 220px;
+    min-height:240px;
 }
 
 .card p {
@@ -931,6 +937,11 @@ grid-template-columns:repeat(2,1fr);
 height:400px;
 
 }
+			  .cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
 }
   @media(max-width:768px){
 
@@ -953,7 +964,13 @@ object-fit:cover;
 font-size:24px;
 
 }
+.cards{
 
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
 }
 
 /*=====================================
@@ -1675,35 +1692,63 @@ living accessible to all.
 </div>
 
 </section>
-      <section id="programs" class="section">
-         <h2>Our Programs</h2>
-         <div class="cards">
-            <div class="card">
-               <h3>Personal Training</h3>
-               <p>One-on-one coaching tailored to your fitness goals.</p>
-            </div>
-            <div class="card">
-               <h3>Weight Loss Transformation</h3>
-               <p>Scientifically designed workout and diet guidance.</p>
-            </div>
-            <div class="card">
-               <h3>Strength & Conditioning</h3>
-               <p>Build muscle, improve stamina and boost performance.</p>
-            </div>
-            <div class="card">
-               <h3>Functional Fitness</h3>
-               <p>Improve mobility, flexibility and overall fitness.</p>
-            </div>
-            <div class="card">
-               <h3>Women Fitness Programs</h3>
-               <p>Safe and effective fitness programs for women.</p>
-            </div>
-            <div class="card">
-               <h3>Fitness Assessment</h3>
-               <p>Track your progress with regular body analysis.</p>
-            </div>
-         </div>
-      </section>
+     <section id="programs" class="section">
+
+<h2>🏋️ Our Programs</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>💪 Personal Training</h3>
+
+<p>One-on-one coaching tailored to your fitness goals.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🔥 Weight Loss Transformation</h3>
+
+<p>Scientifically designed workout and nutrition guidance for sustainable results.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏋️ Strength & Conditioning</h3>
+
+<p>Build muscle, improve endurance, and enhance overall performance.</p>
+
+</div>
+
+<div class="card">
+
+<h3>⚡ Functional Fitness</h3>
+
+<p>Improve mobility, flexibility, balance, and everyday movement.</p>
+
+</div>
+
+<div class="card">
+
+<h3>👩 Women's Fitness Programs</h3>
+
+<p>Safe, personalized fitness programs designed exclusively for women.</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Fitness Assessment</h3>
+
+<p>Track your progress through regular body composition and fitness analysis.</p>
+
+</div>
+
+</div>
+
+</section>
 	 <section class="section" id="coaches">
 
 <h2>🏋️ Meet Our Expert Coaches</h2>
