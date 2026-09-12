@@ -1527,7 +1527,7 @@ Member Of The Month
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    max-width: 1000px;
+    max-width: 735px;
     margin: 0 auto;
 }
 
