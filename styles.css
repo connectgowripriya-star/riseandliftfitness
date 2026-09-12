@@ -1556,3 +1556,28 @@ Member Of The Month
     height: auto;
     object-fit: contain;
 }
+
+/*=========================
+  TRAINING IN ACTION
+=========================*/
+
+.training-action {
+    margin-top: 50px;
+}
+
+.training-action h3 {
+    text-align: center;
+    color: #144787;
+    font-family: 'Salsa', cursive;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.training-action > p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
