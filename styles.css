@@ -1544,3 +1544,20 @@ Member Of The Month
         grid-template-columns: 1fr;
     }
 }
+
+.facilities-video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.facilities-video .video-card {
+    width: 100%;
+    max-width: 700px;
+}
+
+.facilities-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
