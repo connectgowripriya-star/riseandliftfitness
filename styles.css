@@ -1581,3 +1581,47 @@ Member Of The Month
     line-height: 1.7;
     color: #555;
 }
+/*=========================
+  WINNER ANNOUNCEMENT
+=========================*/
+
+.winner-announcement {
+    margin-top: 30px;
+    padding: 25px;
+    background: #F5F9FF;
+    border-left: 5px solid #0DB5A5;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.winner-announcement h3 {
+    color: #144787;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.winner-announcement h4 {
+    color: #144787;
+    font-size: 19px;
+    margin: 22px 0 12px;
+}
+
+.winner-announcement p {
+    margin-bottom: 9px;
+    line-height: 1.7;
+    color: #444;
+}
+
+@media(max-width:768px) {
+    .winner-announcement {
+        padding: 18px;
+    }
+
+    .winner-announcement h3 {
+        font-size: 20px;
+    }
+
+    .winner-announcement h4 {
+        font-size: 17px;
+    }
+}
